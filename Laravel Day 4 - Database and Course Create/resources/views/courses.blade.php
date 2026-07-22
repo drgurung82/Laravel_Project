@@ -1,7 +1,7 @@
 <x-layout>
 
 
-    <section>
+    {{-- <section>
         <div class="container">
             <h1 class="text-4xl text-center mt-20 mb-5">This is Courses Page.</h1>
 
@@ -36,7 +36,7 @@
             </form>
 
         </div>
-    </section>
+    </section> --}}
 
 
     <section>

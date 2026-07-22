@@ -1,0 +1,46 @@
+<x-layout>
+
+
+    <section>
+        <div class="container py-16">
+            <h1 class="text-4xl text-center mb-8">Create Contact</h1>
+
+            <form action="/save-contact" method="post" class="space-y-6">
+                @csrf
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="eg. Dhan Raj Gurung" class="border px-1 py-2 w-full" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="eg. abc@gmail.com" class="border px-1 py-2 w-full" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" class="border px-1 py-2 w-full" required>
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="border px-1 py-2 w-full">
+                    </div>
+
+                    <div class="col-span-2">
+                        <label for="message">Message</label>
+                        {{-- <input type="text" name="description" id="description" class="border px-1 py-2 w-full" required> --}}
+                        <textarea name="message" id="message" rows="10" class="border px-1 py-2 w-full" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="bg-[green] hover:bg-orange-600 px-5 py-2 rounded-md text-white">Save Record</button>
+            </form>
+
+        </div>
+    </section>
+
+
+</x-layout>
