@@ -4,6 +4,7 @@ use App\Models\Contact;
 use App\Models\Course;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Sudam\SudamSweetAlert\Facades\SudamSweetAlert;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,6 +33,7 @@ Route::post("/save-course", function (Request $request){
     $course->price = $request->price;
     $course->description = $request->description;
     $course->save();
+    SudamSweetAlert::toast('success', 'Saved!');
     return redirect('/courses');
 });
 
@@ -44,5 +46,6 @@ Route::post("/save-contact", function (Request $request){
     $contact->subject = $request->subject;
     $contact->message = $request->message;
     $contact->save();
+    SudamSweetAlert::toast('success', 'Saved!');
     return redirect('/contact');
 });

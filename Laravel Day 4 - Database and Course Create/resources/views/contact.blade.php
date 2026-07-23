@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="bg-[green] hover:bg-orange-600 px-5 py-2 rounded-md text-white">Save Record</button>
+                <button type="submit" class="bg-[green] hover:bg-[purple] px-5 py-2 rounded-md text-white">Save Record</button>
             </form>
 
         </div>

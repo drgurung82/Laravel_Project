@@ -12,18 +12,26 @@
             width: 90%;
             margin: 0 auto;
         }
+
+        button{
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body class="bg-purple-50">
 
-    <x-header/>
+    <x-header />
 
     <main>
         {{ $slot }}
     </main>
 
-    <x-footer/>
+    <x-footer />
+
+
+
+    @include('sudam-sweet-alert::alert')
 </body>
 
 </html>
