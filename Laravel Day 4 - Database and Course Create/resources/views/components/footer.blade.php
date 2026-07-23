@@ -1,15 +1,15 @@
-{{-- <footer class="bg-gray-900 text-white mt-10">
+<footer class="bg-purple-200 text-[#2d2b2b] mt-10">
     <div class="container mx-auto px-6 py-10">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
             <!-- Company -->
             <div>
-                <h2 class="text-2xl font-bold text-orange-500">
-                    Laravel<span class="text-white">Project</span>
+                <h2 class="text-2xl font-bold text-[purple]">
+                    Laravel<span class="text-[gray]">Project</span>
                 </h2>
 
-                <p class="mt-4 text-gray-400">
+                <p class="mt-4 text-[#2d2b2b]">
                     We provide modern Laravel web applications with responsive
                     design and high performance.
                 </p>
@@ -17,7 +17,7 @@
 
             <!-- Quick Links -->
             <div>
-                <h3 class="text-xl font-semibold mb-4 text-orange-500">
+                <h3 class="text-xl font-semibold mb-4 text-[purple]">
                     Quick Links
                 </h3>
 
@@ -50,43 +50,43 @@
 
             <!-- Contact -->
             <div>
-                <h3 class="text-xl font-semibold mb-4 text-orange-500">
+                <h3 class="text-xl font-semibold mb-4 text-[purple]">
                     Contact
                 </h3>
 
                 <p class="mb-2">
                     <i class="fa-solid fa-location-dot text-orange-500"></i>
-                    Kathmandu, Nepal
+                    Waling-1, Syangja, Nepal
                 </p>
 
                 <p class="mb-2">
                     <i class="fa-solid fa-phone text-orange-500"></i>
-                    +977-98XXXXXXXX
+                    +977-9860013137
                 </p>
 
                 <p>
                     <i class="fa-solid fa-envelope text-orange-500"></i>
-                    info@example.com
+                    drgurung82@gmail.com
                 </p>
             </div>
 
             <!-- Social -->
             <div>
-                <h3 class="text-xl font-semibold mb-4 text-orange-500">
+                <h3 class="text-xl font-semibold mb-4 text-[purple]">
                     Follow Us
                 </h3>
 
                 <div class="flex gap-4">
 
-                    <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-500 hover:bg-orange-600 flex items-center justify-center">
                         <i class="fab fa-facebook-f"></i>
                     </a>
 
-                    <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center">
+                    <a href="#" class="w-10 h-10 rounded-full bg-pink-500 hover:bg-orange-600 flex items-center justify-center">
                         <i class="fab fa-instagram"></i>
                     </a>
 
-                    <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center">
+                    <a href="#" class="w-10 h-10 rounded-full bg-red-500 hover:bg-orange-600 flex items-center justify-center">
                         <i class="fab fa-youtube"></i>
                     </a>
 
@@ -97,11 +97,11 @@
 
         <hr class="border-gray-700 my-8">
 
-        <div class="text-center text-gray-400">
+        <div class="text-center text-[gray]">
 
             © {{ date('Y') }} Laravel Project. All Rights Reserved.
 
         </div>
 
     </div>
-</footer> --}}
+</footer>
