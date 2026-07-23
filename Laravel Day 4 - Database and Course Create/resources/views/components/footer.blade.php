@@ -78,15 +78,15 @@
 
                 <div class="flex gap-4">
 
-                    <a href="#" class="w-10 h-10 rounded-full bg-blue-500 hover:bg-orange-600 flex items-center justify-center">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-400 hover:bg-orange-600 flex items-center justify-center">
                         <i class="fab fa-facebook-f"></i>
                     </a>
 
-                    <a href="#" class="w-10 h-10 rounded-full bg-pink-500 hover:bg-orange-600 flex items-center justify-center">
+                    <a href="#" class="w-10 h-10 rounded-full bg-pink-400 hover:bg-orange-600 flex items-center justify-center">
                         <i class="fab fa-instagram"></i>
                     </a>
 
-                    <a href="#" class="w-10 h-10 rounded-full bg-red-500 hover:bg-orange-600 flex items-center justify-center">
+                    <a href="#" class="w-10 h-10 rounded-full bg-red-400 hover:bg-orange-600 flex items-center justify-center">
                         <i class="fab fa-youtube"></i>
                     </a>
 
@@ -99,7 +99,7 @@
 
         <div class="text-center text-[gray]">
 
-            © {{ date('Y') }} Laravel Project. All Rights Reserved.
+            © {{ date('Y') }} <a href="http://127.0.0.1:8000/" class="hover:text-orange-600">Laravel Project</a>. All Rights Reserved.
 
         </div>
 
