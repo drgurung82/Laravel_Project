@@ -95,7 +95,7 @@
 
         </div>
 
-        <hr class="border-gray-700 my-8">
+        <hr class="border-purple-700 my-8">
 
         <div class="text-center text-[gray]">
 
