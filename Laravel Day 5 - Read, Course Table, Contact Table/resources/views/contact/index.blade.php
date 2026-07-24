@@ -5,7 +5,7 @@
         <div class="container py-16">
             <div class="w-full flex justify-between items-center">
                 <h1 class="text-4xl text-center mt-2 mb-2">Contact</h1>
-                <a href="/contact/create" class="bg-[purple] text-white px-6 py-2 rounded-full">add new</a>
+                <a href="/contact/create" class="bg-[purple] hover:bg-orange-500 text-white px-6 py-2 rounded-full">add new</a>
             </div>
 
             <table class="w-full mt-10 mb-10 text-center">

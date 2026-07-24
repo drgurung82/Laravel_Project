@@ -5,7 +5,7 @@
         <div class="container py-16">
             <div class="flex justify-between items-center">
                 <h1 class="text-4xl text-center mb-8">Contact Create</h1>
-                <a href="/contact" class="bg-[purple] text-white px-6 py-2 rounded-full">go back</a>
+                <a href="/contact" class="bg-[purple] hover:bg-orange-500 text-white px-6 py-2 rounded-full">go back</a>
             </div>
 
             <form action="/save-contact" method="post" class="space-y-6">
