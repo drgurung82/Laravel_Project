@@ -92,7 +92,7 @@ Route::patch("/course/update/{id}", function (Request $request, $id){
 
 // Admission
 Route::get("/admission/index", function(){
-    $admission = Admission::all();
+    // $admission = Admission::all();
     return view('admission.index');
 });
 
