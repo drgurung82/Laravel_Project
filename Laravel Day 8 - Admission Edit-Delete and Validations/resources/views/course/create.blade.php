@@ -14,7 +14,7 @@
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <label for="course_name">Course Name</label>
-                        <input type="text" name="course_name" id="course_name" class="border px-1 py-2 w-full" value="{{ old('course_name') }}">
+                        <input type="text" name="course_name" id="course_name" placeholder="eg. Laravel" class="border px-1 py-2 w-full rounded-md" value="{{ old('course_name') }}">
                          @error('course_name')
                             <span class="text-sm text-[red]">{{ $message }}</span>
                         @enderror
@@ -22,7 +22,7 @@
 
                     <div>
                         <label for="price">Course Price</label>
-                        <input type="number" name="price" id="price" class="border px-1 py-2 w-full" value="{{ old('price') }}">
+                        <input type="number" name="price" id="price" placeholder="eg. 2499" class="border px-1 py-2 w-full rounded-md" value="{{ old('price') }}">
                          @error('price')
                             <span class="text-sm text-[red]">{{ $message }}</span>
                         @enderror
@@ -31,7 +31,7 @@
                     <div class="col-span-2">
                         <label for="description">Course Description</label>
                         {{-- <input type="text" name="description" id="description" class="border px-1 py-2 w-full" required> --}}
-                        <textarea name="description" id="description" rows="10" class="border px-1 py-2 w-full" required></textarea>
+                        <textarea name="description" id="description" rows="6" class="border px-1 py-2 w-full rounded-md"></textarea>
                          @error('description')
                             <span class="text-sm text-[red]">{{ $message }}</span>
                         @enderror

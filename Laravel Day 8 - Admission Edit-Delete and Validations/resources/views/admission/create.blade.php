@@ -15,7 +15,7 @@
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <label for="name">Enter Your Name</label>
-                        <input type="text" name="name" id="name" class="border px-1 py-2 w-full"
+                        <input type="text" name="name" id="name" placeholder="eg. Dhan Raj Gurung" class="border px-1 py-2 w-full rounded-md"
                             value="{{ old('name') }}">
                         @error('name')
                             <span class="text-sm text-[red]">{{ $message }}</span>
@@ -24,7 +24,7 @@
 
                     <div>
                         <label for="email">Enter Your Email</label>
-                        <input type="email" name="email" id="email" class="border px-1 py-2 w-full"
+                        <input type="email" name="email" id="email" placeholder="eg. abc@gmail.com" class="border px-1 py-2 w-full rounded-md"
                             value="{{ old('email') }}">
                         @error('email')
                             <span class="text-sm text-[red]">{{ $message }}</span>
@@ -33,7 +33,7 @@
 
                     <div>
                         <label for="phone">Enter Your Phone Number</label>
-                        <input type="tel" name="phone" id="phone" class="border px-1 py-2 w-full"
+                        <input type="tel" name="phone" id="phone" placeholder="eg. 9xxxxxxxxx" class="border px-1 py-2 w-full rounded-md"
                             value="{{ old('phone') }}">
                         @error('phone')
                             <span class="text-sm text-[red]">{{ $message }}</span>
@@ -43,7 +43,7 @@
                     <div>
                         <label for="course">Select Course</label>
                         {{-- <input type="text" name="course" id="course" class="border px-1 py-2 w-full"> --}}
-                        <select name="course" id="course" class="border px-1 py-2 w-full">
+                        <select name="course" id="course" class="border px-1 py-2 w-full rounded-md">
                             @foreach ($courses as $course)
                                 <option value="{{ $course->id }}"
                                     {{ old('course') == $course->id ? 'selected' : '' }}>{{ $course->name }}, Rs.
