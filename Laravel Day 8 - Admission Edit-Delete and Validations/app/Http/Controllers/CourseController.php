@@ -23,6 +23,11 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         // return $request;
+        $request->validate([
+            "course_name" => "required|min:3|max:40",
+            "price" => "required|numeric|min:0",
+            "description" => "required|min:3|max:1000",
+        ]);
         $course = new Course();
         $course->name = $request->course_name;
         $course->price = $request->price;
@@ -51,6 +56,11 @@ class CourseController extends Controller
     {
         // return $request;
         // $course = new Course();
+        $request->validate([
+            "course_name" => "required|min:3|max:40",
+            "price" => "required|numeric|min:0",
+            "description" => "required|min:3|max:1000",
+        ]);
         $course = Course::find($id);
         $course->name = $request->course_name;
         $course->price = $request->price;

@@ -47,10 +47,9 @@
                             @foreach ($courses as $course)
                                 <option value="{{ $course->id }}"
                                     {{ old('course') == $course->id ? 'selected' : '' }}>{{ $course->name }}, Rs.
-                                    {{ $course->price }}
+                                    {{ $course->price }}/-
                                 </option>
                             @endforeach
-
                         </select>
                         @error('course')
                             <span class="text-sm text-[red]">{{ $message }}</span>

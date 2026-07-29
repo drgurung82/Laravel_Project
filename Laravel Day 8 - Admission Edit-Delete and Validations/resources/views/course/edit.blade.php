@@ -14,18 +14,27 @@
                 <div class="grid grid-cols-2 gap-6">
                     <div>
                         <label for="course_name">Course Name</label>
-                        <input type="text" name="course_name" id="course_name" class="border px-1 py-2 w-full" value="{{ $course->name }}" required>
+                        <input type="text" name="course_name" id="course_name" class="border px-1 py-2 w-full" value="{{ Old("course_name") ?? $course->name }}">
+                        @error('course_name')
+                            <span class="text-sm text-[red]">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     <div>
                         <label for="price">Course Price</label>
-                        <input type="number" name="price" id="price" class="border px-1 py-2 w-full" value="{{ $course->price }}">
+                        <input type="number" name="price" id="price" class="border px-1 py-2 w-full" value="{{ Old("price") ?? $course->price }}">
+                        @error('price')
+                            <span class="text-sm text-[red]">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     <div class="col-span-2">
                         <label for="description">Course Description</label>
                         {{-- <input type="text" name="description" id="description" class="border px-1 py-2 w-full" required> --}}
                         <textarea name="description" id="description" rows="10" class="border px-1 py-2 w-full">{{ $course->description }}</textarea>
+                        @error('description')
+                            <span class="text-sm text-[red]">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
 

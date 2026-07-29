@@ -22,32 +22,39 @@
                 </h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="{{ url('/') }}" class="group flex items-center gap-1 hover:text-orange-500">
-                            Home
-                            <span class="transition-transform duration-300 group-hover:rotate-90">
-                                <i class="fa-solid fa-angles-up"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/about') }}" class="group flex items-center gap-1 hover:text-orange-500">
-                            About
-                            <span class="transition-transform duration-300 group-hover:rotate-90">
-                                <i class="fa-solid fa-angles-up"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/courses') }}" class="group flex items-center gap-1 hover:text-orange-500">
-                            Courses
-                            <span class="transition-transform duration-300 group-hover:rotate-90">
-                                <i class="fa-solid fa-angles-up"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/contact') }}" class="group flex items-center gap-1 hover:text-orange-500">
-                            Contact
-                            <span class="transition-transform duration-300 group-hover:rotate-90">
-                                <i class="fa-solid fa-angles-up"></i>
+                        <a href="{{ url('/') }}"
+                            class="group flex items-center transition-colors duration-300 hover:text-orange-500">
+                            <span
+                                class="h-0.5 w-0 bg-orange-500 mr-0 transition-all duration-300 group-hover:w-2 group-hover:mr-2">
                             </span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/about') }}"
+                            class="group flex items-center transition-colors duration-300 hover:text-orange-500">
+                            <span
+                                class="h-0.5 w-0 bg-orange-500 mr-0 transition-all duration-300 group-hover:w-2 group-hover:mr-2">
+                            </span>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/courses') }}"
+                            class="group flex items-center transition-colors duration-300 hover:text-orange-500">
+                            <span
+                                class="h-0.5 w-0 bg-orange-500 mr-0 transition-all duration-300 group-hover:w-2 group-hover:mr-2">
+                            </span>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/contact') }}"
+                            class="group flex items-center transition-colors duration-300 hover:text-orange-500">
+                            <span
+                                class="h-0.5 w-0 bg-orange-500 mr-0 transition-all duration-300 group-hover:w-2 group-hover:mr-2">
+                            </span>
+                            <span>Contact</span>
                         </a>
                     </li>
                 </ul>
@@ -80,15 +87,23 @@
                 <div class="flex gap-4">
                     <a href="#"
                         class="w-10 h-10 rounded-full bg-blue-400 hover:bg-orange-600 flex items-center justify-center">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook fa-jello"></i>
                     </a>
                     <a href="#"
                         class="w-10 h-10 rounded-full bg-pink-400 hover:bg-orange-600 flex items-center justify-center">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa-brands fa-instagram fa-flip"></i>
                     </a>
                     <a href="#"
                         class="w-10 h-10 rounded-full bg-[red] hover:bg-orange-600 flex items-center justify-center">
-                        <i class="fab fa-youtube"></i>
+                        <i class="fa-brands fa-youtube fa-swing"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-[gray] hover:bg-orange-600 flex items-center justify-center">
+                        <i class="fa-brands fa-github fa-beat-fade"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-purple-400 hover:bg-orange-600 flex items-center justify-center">
+                        <i class="fa-brands fa-tiktok fa-fade" style="color: rgb(0, 0, 0);"></i>
                     </a>
                 </div>
             </div>
@@ -97,15 +112,22 @@
         <hr class="border-purple-700 my-8">
 
         <!-- Footer Menu -->
-        <div class="container mx-auto flex justify-center py-1 pb-8 gap-6">
-            <div class="space-x-2 items-center">
-                <a href="/" class="hover:text-white hover:bg-orange-500 text-[white] bg-[purple] px-2 py-1 border rounded-md">Home</a>
-                <a href="/about" class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">About</a>
-                <a href="/contact" class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Contact</a>
-                <a href="#" class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Disclaimer</a>
-                <a href="#" class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Privacy</a>
-                <a href="#" class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Sitemap</a>
-                <a href="#" class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Terms</a>
+        <div class="container mx-auto flex justify-center py-1 pb-8">
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
+                <a href="/"
+                    class="hover:text-white hover:bg-orange-500 text-[white] bg-[purple] px-2 py-1 border rounded-md">Home</a>
+                <a href="/about"
+                    class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">About</a>
+                <a href="/contact"
+                    class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Contact</a>
+                <a href="#"
+                    class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Disclaimer</a>
+                <a href="#"
+                    class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Privacy</a>
+                <a href="#"
+                    class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Sitemap</a>
+                <a href="#"
+                    class="hover:text-white hover:bg-orange-500 text-[purple] px-2 py-1 border rounded-md">Terms</a>
             </div>
             <div>
                 <a href="https://wa.me/9860013137" target="_blank"
@@ -114,7 +136,8 @@
             </div>
         </div>
         <div class="text-center text-[gray]">
-            © {{ date('Y') }} <a href="http://127.0.0.1:8000/" class="hover:text-orange-600">Laravel Project</a>.
+            © {{ date('Y') }} <a href="http://127.0.0.1:8000/" class="hover:text-orange-600 text-black">Laravel
+                Project</a>.
             All Rights Reserved.
         </div>
     </div>
